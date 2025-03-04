@@ -1,0 +1,132 @@
+provider "aws" {
+  alias  = "region1"
+  region = "us-east-1" # Change to your first region
+}
+
+provider "aws" {
+  alias  = "region2"
+  region = "us-west-2" # Change to your second region
+}
+
+variable "source_bucket" {
+  default = "my-source-bucket"
+}
+
+variable "destination_bucket" {
+  default = "my-destination-bucket"
+}
+
+resource "aws_s3_bucket_versioning" "source_versioning" {
+  bucket = var.source_bucket
+  versioning_configuration {
+    status = "Enabled"
+  }
+}
+
+resource "aws_s3_bucket_versioning" "destination_versioning" {
+  bucket = var.destination_bucket
+  versioning_configuration {
+    status = "Enabled"
+  }
+}
+
+resource "aws_iam_role" "s3_replication_role" {
+  name = "s3-replication-role"
+
+  assume_role_policy = <<EOF
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": { "Service": "s3.amazonaws.com" },
+      "Action": "sts:AssumeRole"
+    }
+  ]
+}
+EOF
+}
+
+resource "aws_iam_policy" "s3_replication_policy" {
+  name        = "s3-replication-policy"
+  description = "Policy for S3 cross-region replication"
+
+  policy = <<EOF
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetReplicationConfiguration",
+        "s3:ListBucket"
+      ],
+      "Resource": [
+        "arn:aws:s3:::${var.source_bucket}",
+        "arn:aws:s3:::${var.destination_bucket}"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObjectVersion",
+        "s3:GetObjectVersionAcl"
+      ],
+      "Resource": [
+        "arn:aws:s3:::${var.source_bucket}/*",
+        "arn:aws:s3:::${var.destination_bucket}/*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:ReplicateObject",
+        "s3:ReplicateDelete",
+        "s3:ReplicateTags"
+      ],
+      "Resource": [
+        "arn:aws:s3:::${var.destination_bucket}/*",
+        "arn:aws:s3:::${var.source_bucket}/*"
+      ]
+    }
+  ]
+}
+EOF
+}
+
+resource "aws_iam_role_policy_attachment" "replication_policy_attach" {
+  role       = aws_iam_role.s3_replication_role.name
+  policy_arn = aws_iam_policy.s3_replication_policy.arn
+}
+
+resource "aws_s3_bucket_replication_configuration" "source_to_destination" {
+  provider = aws.region1
+  bucket   = var.source_bucket
+  role     = aws_iam_role.s3_replication_role.arn
+
+  rule {
+    id     = "source-to-destination"
+    status = "Enabled"
+
+    destination {
+      bucket        = "arn:aws:s3:::${var.destination_bucket}"
+      storage_class = "STANDARD"
+    }
+  }
+}
+
+resource "aws_s3_bucket_replication_configuration" "destination_to_source" {
+  provider = aws.region2
+  bucket   = var.destination_bucket
+  role     = aws_iam_role.s3_replication_role.arn
+
+  rule {
+    id     = "destination-to-source"
+    status = "Enabled"
+
+    destination {
+      bucket        = "arn:aws:s3:::${var.source_bucket}"
+      storage_class = "STANDARD"
+    }
+  }
+}
