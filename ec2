@@ -1,0 +1,32 @@
+provider "aws" {
+  region = "us-east-1"
+}
+
+resource "aws_instance" "example" {
+  ami           = "ami-0c55b159cbfafe1f0"  # replace with your AMI ID
+  instance_type = "t3.micro"
+  key_name      = "your-key-pair"          # replace with your key pair
+
+  # Use existing network interface
+  network_interface {
+    network_interface_id = "eni-0123456789abcdef0"  # replace with your ENI ID
+    device_index         = 0
+  }
+
+  # Root volume specification
+  root_block_device {
+    volume_size = 20  # in GB
+    volume_type = "gp3"
+    delete_on_termination = true
+  }
+
+  # Inline user data (bash script)
+  user_data = <<-EOF
+              #!/bin/bash
+              echo "Hello from user data!" > /var/tmp/hello.txt
+              EOF
+
+  tags = {
+    Name = "example-ec2-instance"
+  }
+}
