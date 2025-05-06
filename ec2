@@ -59,3 +59,15 @@ resource "aws_security_group" "example" {
   # other rules ...
 }
 
+
+resource "aws_lb_listener" "nlb_listener" {
+  load_balancer_arn = "arn:aws:elasticloadbalancing:region:account-id:loadbalancer/net/my-nlb/1234567890abcdef"
+  port              = 80
+  protocol          = "TCP"
+
+  default_action {
+    type             = "forward"
+    target_group_arn = "arn:aws:elasticloadbalancing:region:account-id:targetgroup/my-target-group/abcdef1234567890"
+  }
+}
+
