@@ -71,3 +71,5 @@ resource "aws_lb_listener" "nlb_listener" {
   }
 }
 
+ couldn't get current server API group list: the server has asked for the client to provide credentials
+error: You must be logged in to the server (the server has asked for the client to provide credentials)
