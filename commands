@@ -1,0 +1,13 @@
+aws ec2 describe-network-interfaces \
+  --query 'NetworkInterfaces[*].{ID:NetworkInterfaceId,PrivateIPs:PrivateIpAddresses[*].PrivateIpAddress,Attachment:Attachment.InstanceId}' \
+  --output table
+
+
+aws ec2 describe-network-interfaces \
+  --query 'NetworkInterfaces[*].{ID:NetworkInterfaceId,IPCount:length(PrivateIpAddresses)}' \
+  --output table
+
+
+aws ec2 describe-network-interfaces \
+  --query 'NetworkInterfaces[*].{ID:NetworkInterfaceId,IPCount:length(PrivateIpAddresses)}' \
+  --output json | jq -r '.[] | "\(.ID) \(.IPCount)"' | sort -k2 -nr
