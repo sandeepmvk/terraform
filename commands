@@ -11,3 +11,92 @@ aws ec2 describe-network-interfaces \
 aws ec2 describe-network-interfaces \
   --query 'NetworkInterfaces[*].{ID:NetworkInterfaceId,IPCount:length(PrivateIpAddresses)}' \
   --output json | jq -r '.[] | "\(.ID) \(.IPCount)"' | sort -k2 -nr
+
+
+
+If your Amazon EKS (Elastic Kubernetes Service) pods are consuming more IPs than expected, it's likely due to the way networking is configured, especially if you're using the default Amazon VPC CNI plugin. Each pod in EKS gets its own IP address from your VPC, which can lead to IP exhaustion.
+
+Here are the main reasons and solutions:
+
+🔍 Why EKS Pods Use So Many IPs
+1. ENI and IP Allocation by Amazon VPC CNI Plugin
+Each node gets Elastic Network Interfaces (ENIs) attached.
+
+Each ENI has a set number of secondary IPs allocated for pods.
+
+The number of IPs per node is determined by:
+
+Instance type (affects number of ENIs and IPs per ENI).
+
+WARM_IP_TARGET or WARM_ENI_TARGET environment variable settings.
+
+2. Over-provisioning IPs
+By default, the CNI pre-allocates IPs (warm pool) to reduce pod startup latency.
+
+This can lead to a large number of unused IPs.
+
+🛠️ How to Diagnose
+Check CNI Configuration:
+
+bash
+Copy code
+kubectl describe daemonset aws-node -n kube-system
+Check IP usage on nodes:
+
+bash
+Copy code
+kubectl get nodes -o wide
+List ENIs and IPs used (from AWS CLI):
+
+bash
+Copy code
+aws ec2 describe-network-interfaces --filters "Name=tag:NodeName,Values=<node-name>"
+✅ Solutions
+A. Tweak VPC CNI Configuration
+Reduce pre-allocated IPs:
+
+Edit the AWS CNI config map:
+
+bash
+Copy code
+kubectl edit configmap aws-node -n kube-system
+Set:
+
+yaml
+Copy code
+WARM_IP_TARGET: "1"
+or
+
+yaml
+Copy code
+WARM_ENI_TARGET: "1"
+Set MINIMUM_IP_TARGET to reduce over-provisioning.
+
+B. Use Custom Networking (Security Groups for Pods)
+Assign secondary ENIs to pods instead of sharing with the node.
+
+This can allow more granular IP management, but is more complex to set up.
+
+C. Use IP Prefix Delegation (if supported)
+If your instance types support it (like m5.large and newer), you can enable prefix delegation to get a block of IPs per ENI (more efficient).
+
+To enable:
+
+bash
+Copy code
+eksctl utils update-cluster-logging --region=<region> --name=<cluster-name> --enable-prefix-delegation
+D. Consider Using Alternate CNI Plugins
+If IP exhaustion is a big problem, consider using CNIs that do not assign a VPC IP per pod, like:
+
+Calico (with IP-in-IP or VXLAN)
+
+Cilium
+
+📊 Monitor IP Usage
+You can monitor IP usage with tools like:
+
+AWS CloudWatch (for ENI/IP metrics)
+
+Prometheus with node-exporter and kube-state-metrics
+
+Would you like help tuning your aws-node CNI config or calculating how many IPs your instance type supports?
