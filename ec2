@@ -101,3 +101,20 @@ resource "aws_lb_target_group" "tcp_target_group" {
     unhealthy_threshold = 3
   }
 }
+
+
+resource "aws_instance" "example" {
+  ami           = "ami-xxxxxxxx"   # Replace with your AMI ID
+  instance_type = "t3.micro"       # Replace with your desired type
+
+  # Required for IMDSv2
+  metadata_options {
+    http_endpoint            = "enabled"
+    http_tokens              = "required"  # Enforces IMDSv2
+    http_put_response_hop_limit = 1
+  }
+
+  tags = {
+    Name = "IMDSv2-Instance"
+  }
+}
