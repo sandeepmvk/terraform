@@ -100,3 +100,5 @@ AWS CloudWatch (for ENI/IP metrics)
 Prometheus with node-exporter and kube-state-metrics
 
 Would you like help tuning your aws-node CNI config or calculating how many IPs your instance type supports?
+
+Error from server (Forbidden): error when creating "nlb-binding.yaml": admission webhook "mtargetgroupbinding.elbv2.k8s.aws" denied the request: couldn't determine TargetType: operation error Elastic Load Balancing v2: DescribeTargetGroups, get identity: get credentials: failed to refresh cached credentials, failed to retrieve credentials, operation error STS: AssumeRoleWithWebIdentity, https response error StatusCode: 403, RequestID: 5a23734f-f7f3-4ce2-a203-730ae23191af, api error AccessDenied: Not authorized to perform sts:AssumeRoleWithWebIdentity
