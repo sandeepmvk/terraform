@@ -73,3 +73,13 @@ resource "aws_lb_listener" "nlb_listener" {
 
  couldn't get current server API group list: the server has asked for the client to provide credentials
 error: You must be logged in to the server (the server has asked for the client to provide credentials)
+
+
+resource "aws_lb_target_group" "nlb_tg" {
+  name        = "nlb-tg"
+  port        = 443
+  protocol    = "TCP"
+  target_type = "ip"  # or "instance"
+  vpc_id      = "vpc-xxxxxxxx"
+}
+
