@@ -83,3 +83,21 @@ resource "aws_lb_target_group" "nlb_tg" {
   vpc_id      = "vpc-xxxxxxxx"
 }
 
+
+
+resource "aws_lb_target_group" "tcp_target_group" {
+  name        = "my-tcp-target-group"
+  port        = 80                        # Port your targets are listening on
+  protocol    = "TCP"
+  target_type = "instance"               # Can be 'instance', 'ip', or 'lambda'
+  vpc_id      = "vpc-xxxxxxxx"           # Replace with your VPC ID
+
+  health_check {
+    protocol            = "TCP"
+    port                = "traffic-port"
+    interval            = 30
+    timeout             = 10
+    healthy_threshold   = 3
+    unhealthy_threshold = 3
+  }
+}
