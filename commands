@@ -122,3 +122,21 @@ else
     echo "Pattern not found. Line added."
 fi
 
+
+
+#!/bin/bash
+
+# Usage: ./replace_jks.sh <properties_file>
+
+FILE="$1"
+
+if [ ! -f "$FILE" ]; then
+  echo "File not found: $FILE"
+  exit 1
+fi
+
+# Replace "Test.jks" with "Test2.jks"
+sed -i 's/Test\.jks/Test2.jks/g' "$FILE"
+
+echo "Replacement done in $FILE"
+
