@@ -1,0 +1,142 @@
+To deploy a Java application (Docker image) to Amazon EKS (Elastic Kubernetes Service) using Azure DevOps, you can follow these high-level steps:
+
+⸻
+
+✅ Overview of the Pipeline
+	1.	Build Java Application and Docker Image
+	2.	Push Docker Image to Amazon ECR (Elastic Container Registry)
+	3.	Deploy to EKS using kubectl
+
+⸻
+
+🔧 Prerequisites
+	•	Java application with a Dockerfile
+	•	EKS cluster running and accessible
+	•	Amazon ECR repository created
+	•	Azure DevOps service connection to AWS (via service principal or IAM credentials)
+	•	kubectl and aws CLI installed in the agent or pipeline
+
+⸻
+
+📁 Project Structure (Example)
+
+.
+├── Dockerfile
+├── deployment.yaml       # Kubernetes manifest
+├── service.yaml          # Kubernetes service (optional)
+├── src/                  # Java source
+├── pom.xml or build.gradle
+
+
+⸻
+
+🧪 Sample Azure DevOps Pipeline (YAML)
+
+trigger:
+- main
+
+variables:
+  AWS_REGION: us-east-1
+  ECR_REPOSITORY: your-ecr-repo-name
+  ECR_REGISTRY: <your_aws_account_id>.dkr.ecr.$(AWS_REGION).amazonaws.com
+  IMAGE_TAG: $(Build.BuildId)
+
+stages:
+- stage: BuildAndPush
+  jobs:
+  - job: Build
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    - task: GitVersion@5
+      displayName: 'Determine version'
+
+    - task: Maven@3
+      displayName: 'Build Java Project'
+      inputs:
+        mavenPomFile: 'pom.xml'
+        goals: 'package'
+
+    - task: Docker@2
+      displayName: 'Build Docker Image'
+      inputs:
+        command: build
+        Dockerfile: '**/Dockerfile'
+        tags: |
+          $(IMAGE_TAG)
+
+    - task: ECRPushImage@1
+      displayName: 'Push to ECR'
+      inputs:
+        awsCredentials: 'AWS-Service-Connection'
+        regionName: '$(AWS_REGION)'
+        imageSource: 'imageId'
+        sourceImageId: '$(Build.Repository.Name):$(IMAGE_TAG)'
+        repositoryName: '$(ECR_REPOSITORY)'
+        pushTag: '$(IMAGE_TAG)'
+
+- stage: Deploy
+  jobs:
+  - job: DeployToEKS
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    - task: AWSCLI@1
+      inputs:
+        awsCredentials: 'AWS-Service-Connection'
+        regionName: '$(AWS_REGION)'
+        command: 'eks update-kubeconfig --name your-eks-cluster-name'
+
+    - script: |
+        kubectl apply -f deployment.yaml
+        kubectl apply -f service.yaml
+      displayName: 'Deploy to EKS'
+
+
+⸻
+
+📜 Sample deployment.yaml
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: java-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: java-app
+  template:
+    metadata:
+      labels:
+        app: java-app
+    spec:
+      containers:
+      - name: java-app
+        image: <your_aws_account_id>.dkr.ecr.us-east-1.amazonaws.com/your-ecr-repo-name:latest
+        ports:
+        - containerPort: 8080
+
+
+⸻
+
+🔐 Notes on Authentication
+	•	Use AWS Service Connection in Azure DevOps:
+	•	Go to Project Settings → Service Connections → Add new → AWS
+	•	Use an IAM user with ECR and EKS permissions
+
+⸻
+
+📌 Optional Enhancements
+	•	Add Helm support for cleaner deployment
+	•	Use kubectl rollout status or kubectl get pods for post-deploy verification
+	•	Add environment-specific deployment (e.g., dev/staging/prod)
+
+⸻
+
+Would you like me to:
+	•	Help you write the Dockerfile?
+	•	Add Helm support?
+	•	Generate the Java sample project too?
+
+Let me know what you’d like to go deeper into.
