@@ -1,4 +1,10 @@
- Warning  FailedMount  0s (x3 over 4m1s)  kubelet            MountVolume.SetUp failed for volume "kongpluginsecret" : rpc error: code = DeadlineExceeded desc = context deadline exceeded
+
+E0620 10:59:38.253663       1 server.go:151] Failure getting secret values from provider type secretsmanager: Failed to fetch secret from all regions: uat-kong-secret
+I0620 10:59:38.811586       1 server.go:124] Servicing mount request for pod ingress-kong-66cdd548f4-jwz68 in namespace kong using service account kong-serviceaccount with region(s) ap-south-1
+I0620 10:59:38.816197       1 auth.go:123] Role ARN for kong:kong-serviceaccount is arn:aws:iam::756821680655:role/cpg_secret_manager_role_kong_secret_uat
+
+
+Warning  FailedMount  0s (x3 over 4m1s)  kubelet            MountVolume.SetUp failed for volume "kongpluginsecret" : rpc error: code = DeadlineExceeded desc = context deadline exceeded
 
 
 To deploy a Java application (Docker image) to Amazon EKS (Elastic Kubernetes Service) using Azure DevOps, you can follow these high-level steps:
