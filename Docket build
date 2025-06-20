@@ -1,3 +1,6 @@
+ Warning  FailedMount  0s (x3 over 4m1s)  kubelet            MountVolume.SetUp failed for volume "kongpluginsecret" : rpc error: code = DeadlineExceeded desc = context deadline exceeded
+
+
 To deploy a Java application (Docker image) to Amazon EKS (Elastic Kubernetes Service) using Azure DevOps, you can follow these high-level steps:
 
 ⸻
