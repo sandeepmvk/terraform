@@ -1,3 +1,16 @@
+,"error":"RequestError: send request failed\ncaused by: Post \"https://logs.ap-south-1.amazonaws.com/\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+
+1] [error] [upstream] connection #31 to logs.ap-south-1.amazonaws.com:443 timed out after 10 seconds
+[2025/06/24 07:11:11] [error] [output:cloudwatch_logs:cloudwatch_logs.1] Failed to create log stream
+[2025/06/24 07:11:11] [error] [upstream] connection #218 to logs.ap-south-1.amazonaws.com:443 timed out after 10 seconds
+[2025/06/24 07:11:11] [error] [output:cloudwatch_logs:cloudwatch_logs.1] Failed to send events
+[2025/06/24 07:11:11] [error] [aws_client] connection initialization error
+[2025/06/24 07:11:11] [error] [output:cloudwatch_logs:cloudwatch_logs.0] Failed to create log stream
+[2025/06/24 07:11:11] [error] [output:cloudwatch_logs:cloudwatch_logs.0] Failed to send events
+[2025/06/24 07:11:11] [error] [aws_client] connection initialization error
+[2025/06/24 07:11:11] [error] [output:cloudwatch_logs:cloudwatch_logs.0] Failed to create log stream
+[2025/06/24 07:11:11] [error] [output:cloudwatch_logs:cloudwatch_logs.0] Failed to send events
+[2025/06/24 07:11:11] [error] [aws_client] connection initialization error
 
 E0620 10:59:38.253663       1 server.go:151] Failure getting secret values from provider type secretsmanager: Failed to fetch secret from all regions: uat-kong-secret
 I0620 10:59:38.811586       1 server.go:124] Servicing mount request for pod ingress-kong-66cdd548f4-jwz68 in namespace kong using service account kong-serviceaccount with region(s) ap-south-1
