@@ -1,3 +1,6 @@
+Error: Unable to continue with install: CustomResourceDefinition "kongclusterplugins.configuration.konghq.com" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; label validation error: missing key "app.kubernetes.io/managed-by": must be set to "Helm"; annotation validation error: missing key "meta.helm.sh/release-name": must be set to "kong"; annotation validation error: missing key "meta.helm.sh/release-namespace": must be set to "kong"
+2025-07-03T06:56:45.1994997Z 
+
 2025-07-03T06:42:38.4756293Z Release "kong" does not exist. Installing it now.
 2025-07-03T06:42:38.9032601Z Error: template: ingress/charts/gateway/templates/service-kong-udp-proxy.yaml:2:20: executing "ingress/charts/gateway/templates/service-kong-udp-proxy.yaml" at <.Values.udpProxy.enabled>: nil pointer evaluating interface {}.enabled
 2025-07-03T06:42:38.9059726Z 
