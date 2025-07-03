@@ -1,3 +1,6 @@
+Error: template: ingress/charts/kong-support-infra/templates/secretproviderclass.yaml:5:25: executing "ingress/charts/kong-support-infra/templates/secretproviderclass.yaml" at <{{template "kong.namespace" .}}>: template "kong.namespace" not defined
+2025-07-03T14:21:35.3072431Z 
+
 Error: Unable to continue with install: CustomResourceDefinition "kongclusterplugins.configuration.konghq.com" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; label validation error: missing key "app.kubernetes.io/managed-by": must be set to "Helm"; annotation validation error: missing key "meta.helm.sh/release-name": must be set to "kong"; annotation validation error: missing key "meta.helm.sh/release-namespace": must be set to "kong"
 2025-07-03T06:56:45.1994997Z 
 
