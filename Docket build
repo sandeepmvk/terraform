@@ -1,3 +1,7 @@
+2025-07-03T06:42:38.4756293Z Release "kong" does not exist. Installing it now.
+2025-07-03T06:42:38.9032601Z Error: template: ingress/charts/gateway/templates/service-kong-udp-proxy.yaml:2:20: executing "ingress/charts/gateway/templates/service-kong-udp-proxy.yaml" at <.Values.udpProxy.enabled>: nil pointer evaluating interface {}.enabled
+2025-07-03T06:42:38.9059726Z 
+
 ,"error":"RequestError: send request failed\ncaused by: Post \"https://logs.ap-south-1.amazonaws.com/\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
 
 1] [error] [upstream] connection #31 to logs.ap-south-1.amazonaws.com:443 timed out after 10 seconds
