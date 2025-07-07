@@ -1,3 +1,848 @@
+╷
+│ Error: Unsupported block type
+│ 
+│   on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_argo_events/main.tf line 47, in resource "helm_release" "this":
+│   47:   dynamic "postrender" {
+│ 
+│ Blocks of type "postrender" are not expected here.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_argo_events/main.tf line 56, in resource "helm_release" "this":
+│   56:   dynamic "set" {
+
+2025-07-07T09:48:18.3834905Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.3835151Z [31m│[0m [0m
+2025-07-07T09:48:18.3835607Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_argo_events/main.tf line 47, in resource "helm_release" "this":
+2025-07-07T09:48:18.3836000Z [31m│[0m [0m  47:   dynamic [4m"postrender"[0m {[0m
+2025-07-07T09:48:18.3836226Z [31m│[0m [0m
+2025-07-07T09:48:18.3836493Z [31m│[0m [0mBlocks of type "postrender" are not expected here.
+2025-07-07T09:48:18.3836724Z [31m╵[0m[0m
+2025-07-07T09:48:18.3857503Z [31m╷[0m[0m
+2025-07-07T09:48:18.3857825Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.3858079Z [31m│[0m [0m
+2025-07-07T09:48:18.3858542Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_argo_events/main.tf line 56, in resource "helm_release" "this":
+2025-07-07T09:48:18.3859300Z [31m│[0m [0m  56:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.3859531Z [31m│[0m [0m
+2025-07-07T09:48:18.3859778Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.3859999Z [31m╵[0m[0m
+2025-07-07T09:48:18.3877679Z [31m╷[0m[0m
+2025-07-07T09:48:18.3878008Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.3878276Z [31m│[0m [0m
+2025-07-07T09:48:18.3878889Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_argo_events/main.tf line 66, in resource "helm_release" "this":
+2025-07-07T09:48:18.3879279Z [31m│[0m [0m  66:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.3879490Z [31m│[0m [0m
+2025-07-07T09:48:18.3880032Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.3880255Z [31m╵[0m[0m
+2025-07-07T09:48:18.3898183Z [31m╷[0m[0m
+2025-07-07T09:48:18.3898542Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.3898785Z [31m│[0m [0m
+2025-07-07T09:48:18.3899244Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_argo_events/main.tf line 75, in resource "helm_release" "this":
+2025-07-07T09:48:18.3899672Z [31m│[0m [0m  75:   dynamic [4m"set_sensitive"[0m {[0m
+2025-07-07T09:48:18.3900061Z [31m│[0m [0m
+2025-07-07T09:48:18.3900329Z [31m│[0m [0mBlocks of type "set_sensitive" are not expected here.
+2025-07-07T09:48:18.3900563Z [31m╵[0m[0m
+2025-07-07T09:48:18.3918565Z [31m╷[0m[0m
+2025-07-07T09:48:18.3918884Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.3919138Z [31m│[0m [0m
+2025-07-07T09:48:18.3919673Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_argo_rollouts/main.tf line 47, in resource "helm_release" "this":
+2025-07-07T09:48:18.3920105Z [31m│[0m [0m  47:   dynamic [4m"postrender"[0m {[0m
+2025-07-07T09:48:18.3920320Z [31m│[0m [0m
+2025-07-07T09:48:18.3920581Z [31m│[0m [0mBlocks of type "postrender" are not expected here.
+2025-07-07T09:48:18.3920817Z [31m╵[0m[0m
+2025-07-07T09:48:18.3939390Z [31m╷[0m[0m
+2025-07-07T09:48:18.3939673Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.3939968Z [31m│[0m [0m
+2025-07-07T09:48:18.3940438Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_argo_rollouts/main.tf line 56, in resource "helm_release" "this":
+2025-07-07T09:48:18.3940822Z [31m│[0m [0m  56:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.3941051Z [31m│[0m [0m
+2025-07-07T09:48:18.3941302Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.3941524Z [31m╵[0m[0m
+2025-07-07T09:48:18.3960632Z [31m╷[0m[0m
+2025-07-07T09:48:18.3961026Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.3961327Z [31m│[0m [0m
+2025-07-07T09:48:18.3961868Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_argo_rollouts/main.tf line 66, in resource "helm_release" "this":
+2025-07-07T09:48:18.3962262Z [31m│[0m [0m  66:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.3962472Z [31m│[0m [0m
+2025-07-07T09:48:18.3962718Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.3962936Z [31m╵[0m[0m
+2025-07-07T09:48:18.3989570Z [31m╷[0m[0m
+2025-07-07T09:48:18.3989911Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.3990159Z [31m│[0m [0m
+2025-07-07T09:48:18.3990613Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_argo_rollouts/main.tf line 75, in resource "helm_release" "this":
+2025-07-07T09:48:18.3991336Z [31m│[0m [0m  75:   dynamic [4m"set_sensitive"[0m {[0m
+2025-07-07T09:48:18.3991559Z [31m│[0m [0m
+2025-07-07T09:48:18.3991818Z [31m│[0m [0mBlocks of type "set_sensitive" are not expected here.
+2025-07-07T09:48:18.3992068Z [31m╵[0m[0m
+2025-07-07T09:48:18.4010013Z [31m╷[0m[0m
+2025-07-07T09:48:18.4010417Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4010717Z [31m│[0m [0m
+2025-07-07T09:48:18.4011280Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_argo_workflows/main.tf line 47, in resource "helm_release" "this":
+2025-07-07T09:48:18.4011678Z [31m│[0m [0m  47:   dynamic [4m"postrender"[0m {[0m
+2025-07-07T09:48:18.4012084Z [31m│[0m [0m
+2025-07-07T09:48:18.4012342Z [31m│[0m [0mBlocks of type "postrender" are not expected here.
+2025-07-07T09:48:18.4012576Z [31m╵[0m[0m
+2025-07-07T09:48:18.4030907Z [31m╷[0m[0m
+2025-07-07T09:48:18.4031310Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4031608Z [31m│[0m [0m
+2025-07-07T09:48:18.4032166Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_argo_workflows/main.tf line 56, in resource "helm_release" "this":
+2025-07-07T09:48:18.4032553Z [31m│[0m [0m  56:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.4032761Z [31m│[0m [0m
+2025-07-07T09:48:18.4033013Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.4033411Z [31m╵[0m[0m
+2025-07-07T09:48:18.4051607Z [31m╷[0m[0m
+2025-07-07T09:48:18.4051983Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4052311Z [31m│[0m [0m
+2025-07-07T09:48:18.4052854Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_argo_workflows/main.tf line 66, in resource "helm_release" "this":
+2025-07-07T09:48:18.4053396Z [31m│[0m [0m  66:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.4053640Z [31m│[0m [0m
+2025-07-07T09:48:18.4053885Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.4054181Z [31m╵[0m[0m
+2025-07-07T09:48:18.4072577Z [31m╷[0m[0m
+2025-07-07T09:48:18.4072951Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4073398Z [31m│[0m [0m
+2025-07-07T09:48:18.4074015Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_argo_workflows/main.tf line 75, in resource "helm_release" "this":
+2025-07-07T09:48:18.4074442Z [31m│[0m [0m  75:   dynamic [4m"set_sensitive"[0m {[0m
+2025-07-07T09:48:18.4074658Z [31m│[0m [0m
+2025-07-07T09:48:18.4074921Z [31m│[0m [0mBlocks of type "set_sensitive" are not expected here.
+2025-07-07T09:48:18.4075156Z [31m╵[0m[0m
+2025-07-07T09:48:18.4105395Z [31m╷[0m[0m
+2025-07-07T09:48:18.4105760Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4105990Z [31m│[0m [0m
+2025-07-07T09:48:18.4106453Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_argocd/main.tf line 47, in resource "helm_release" "this":
+2025-07-07T09:48:18.4106830Z [31m│[0m [0m  47:   dynamic [4m"postrender"[0m {[0m
+2025-07-07T09:48:18.4107039Z [31m│[0m [0m
+2025-07-07T09:48:18.4107296Z [31m│[0m [0mBlocks of type "postrender" are not expected here.
+2025-07-07T09:48:18.4107519Z [31m╵[0m[0m
+2025-07-07T09:48:18.4127840Z [31m╷[0m[0m
+2025-07-07T09:48:18.4128132Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4128456Z [31m│[0m [0m
+2025-07-07T09:48:18.4128939Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_argocd/main.tf line 56, in resource "helm_release" "this":
+2025-07-07T09:48:18.4129564Z [31m│[0m [0m  56:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.4129774Z [31m│[0m [0m
+2025-07-07T09:48:18.4130028Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.4130257Z [31m╵[0m[0m
+2025-07-07T09:48:18.4149129Z [31m╷[0m[0m
+2025-07-07T09:48:18.4149393Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4149914Z [31m│[0m [0m
+2025-07-07T09:48:18.4150489Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_argocd/main.tf line 66, in resource "helm_release" "this":
+2025-07-07T09:48:18.4151032Z [31m│[0m [0m  66:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.4151242Z [31m│[0m [0m
+2025-07-07T09:48:18.4151486Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.4151718Z [31m╵[0m[0m
+2025-07-07T09:48:18.4170769Z [31m╷[0m[0m
+2025-07-07T09:48:18.4171033Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4171273Z [31m│[0m [0m
+2025-07-07T09:48:18.4171715Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_argocd/main.tf line 75, in resource "helm_release" "this":
+2025-07-07T09:48:18.4172105Z [31m│[0m [0m  75:   dynamic [4m"set_sensitive"[0m {[0m
+2025-07-07T09:48:18.4172324Z [31m│[0m [0m
+2025-07-07T09:48:18.4172584Z [31m│[0m [0mBlocks of type "set_sensitive" are not expected here.
+2025-07-07T09:48:18.4172823Z [31m╵[0m[0m
+2025-07-07T09:48:18.4191294Z [31m╷[0m[0m
+2025-07-07T09:48:18.4191585Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4191907Z [31m│[0m [0m
+2025-07-07T09:48:18.4192386Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_cloudwatch_metrics/main.tf line 47, in resource "helm_release" "this":
+2025-07-07T09:48:18.4192795Z [31m│[0m [0m  47:   dynamic [4m"postrender"[0m {[0m
+2025-07-07T09:48:18.4193019Z [31m│[0m [0m
+2025-07-07T09:48:18.4193440Z [31m│[0m [0mBlocks of type "postrender" are not expected here.
+2025-07-07T09:48:18.4193674Z [31m╵[0m[0m
+2025-07-07T09:48:18.4212023Z [31m╷[0m[0m
+2025-07-07T09:48:18.4212293Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4212572Z [31m│[0m [0m
+2025-07-07T09:48:18.4213088Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_cloudwatch_metrics/main.tf line 56, in resource "helm_release" "this":
+2025-07-07T09:48:18.4213685Z [31m│[0m [0m  56:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.4213893Z [31m│[0m [0m
+2025-07-07T09:48:18.4214258Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.4214487Z [31m╵[0m[0m
+2025-07-07T09:48:18.4231919Z [31m╷[0m[0m
+2025-07-07T09:48:18.4232207Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4232525Z [31m│[0m [0m
+2025-07-07T09:48:18.4232996Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_cloudwatch_metrics/main.tf line 66, in resource "helm_release" "this":
+2025-07-07T09:48:18.4233551Z [31m│[0m [0m  66:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.4233761Z [31m│[0m [0m
+2025-07-07T09:48:18.4234008Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.4234229Z [31m╵[0m[0m
+2025-07-07T09:48:18.4252213Z [31m╷[0m[0m
+2025-07-07T09:48:18.4252497Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4252725Z [31m│[0m [0m
+2025-07-07T09:48:18.4253367Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_cloudwatch_metrics/main.tf line 75, in resource "helm_release" "this":
+2025-07-07T09:48:18.4254010Z [31m│[0m [0m  75:   dynamic [4m"set_sensitive"[0m {[0m
+2025-07-07T09:48:18.4254290Z [31m│[0m [0m
+2025-07-07T09:48:18.4254554Z [31m│[0m [0mBlocks of type "set_sensitive" are not expected here.
+2025-07-07T09:48:18.4254793Z [31m╵[0m[0m
+2025-07-07T09:48:18.4272221Z [31m╷[0m[0m
+2025-07-07T09:48:18.4272564Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4272828Z [31m│[0m [0m
+2025-07-07T09:48:18.4273473Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_efs_csi_driver/main.tf line 47, in resource "helm_release" "this":
+2025-07-07T09:48:18.4274040Z [31m│[0m [0m  47:   dynamic [4m"postrender"[0m {[0m
+2025-07-07T09:48:18.4274267Z [31m│[0m [0m
+2025-07-07T09:48:18.4274535Z [31m│[0m [0mBlocks of type "postrender" are not expected here.
+2025-07-07T09:48:18.4274764Z [31m╵[0m[0m
+2025-07-07T09:48:18.4294015Z [31m╷[0m[0m
+2025-07-07T09:48:18.4294388Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4294682Z [31m│[0m [0m
+2025-07-07T09:48:18.4295188Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_efs_csi_driver/main.tf line 56, in resource "helm_release" "this":
+2025-07-07T09:48:18.4295583Z [31m│[0m [0m  56:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.4295793Z [31m│[0m [0m
+2025-07-07T09:48:18.4296042Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.4296277Z [31m╵[0m[0m
+2025-07-07T09:48:18.4319831Z [31m╷[0m[0m
+2025-07-07T09:48:18.4320100Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4320328Z [31m│[0m [0m
+2025-07-07T09:48:18.4320814Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_efs_csi_driver/main.tf line 66, in resource "helm_release" "this":
+2025-07-07T09:48:18.4321503Z [31m│[0m [0m  66:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.4321746Z [31m│[0m [0m
+2025-07-07T09:48:18.4322037Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.4322319Z [31m╵[0m[0m
+2025-07-07T09:48:18.4340309Z [31m╷[0m[0m
+2025-07-07T09:48:18.4340635Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4340881Z [31m│[0m [0m
+2025-07-07T09:48:18.4341501Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_efs_csi_driver/main.tf line 75, in resource "helm_release" "this":
+2025-07-07T09:48:18.4341956Z [31m│[0m [0m  75:   dynamic [4m"set_sensitive"[0m {[0m
+2025-07-07T09:48:18.4342232Z [31m│[0m [0m
+2025-07-07T09:48:18.4342526Z [31m│[0m [0mBlocks of type "set_sensitive" are not expected here.
+2025-07-07T09:48:18.4342799Z [31m╵[0m[0m
+2025-07-07T09:48:18.4360270Z [31m╷[0m[0m
+2025-07-07T09:48:18.4360776Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4361080Z [31m│[0m [0m
+2025-07-07T09:48:18.4361575Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_for_fluentbit/main.tf line 47, in resource "helm_release" "this":
+2025-07-07T09:48:18.4362029Z [31m│[0m [0m  47:   dynamic [4m"postrender"[0m {[0m
+2025-07-07T09:48:18.4362284Z [31m│[0m [0m
+2025-07-07T09:48:18.4362593Z [31m│[0m [0mBlocks of type "postrender" are not expected here.
+2025-07-07T09:48:18.4362860Z [31m╵[0m[0m
+2025-07-07T09:48:18.4380995Z [31m╷[0m[0m
+2025-07-07T09:48:18.4381414Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4381955Z [31m│[0m [0m
+2025-07-07T09:48:18.4382459Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_for_fluentbit/main.tf line 56, in resource "helm_release" "this":
+2025-07-07T09:48:18.4382880Z [31m│[0m [0m  56:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.4383126Z [31m│[0m [0m
+2025-07-07T09:48:18.4383648Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.4383925Z [31m╵[0m[0m
+2025-07-07T09:48:18.4401101Z [31m╷[0m[0m
+2025-07-07T09:48:18.4401515Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4424733Z [31m│[0m [0m
+2025-07-07T09:48:18.4425468Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_for_fluentbit/main.tf line 66, in resource "helm_release" "this":
+2025-07-07T09:48:18.4426130Z [31m│[0m [0m  66:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.4426352Z [31m│[0m [0m
+2025-07-07T09:48:18.4426602Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.4426828Z [31m╵[0m[0m
+2025-07-07T09:48:18.4427075Z [31m╷[0m[0m
+2025-07-07T09:48:18.4427338Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4427557Z [31m│[0m [0m
+2025-07-07T09:48:18.4428025Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_for_fluentbit/main.tf line 75, in resource "helm_release" "this":
+2025-07-07T09:48:18.4428410Z [31m│[0m [0m  75:   dynamic [4m"set_sensitive"[0m {[0m
+2025-07-07T09:48:18.4428621Z [31m│[0m [0m
+2025-07-07T09:48:18.4428887Z [31m│[0m [0mBlocks of type "set_sensitive" are not expected here.
+2025-07-07T09:48:18.4429122Z [31m╵[0m[0m
+2025-07-07T09:48:18.4451593Z [31m╷[0m[0m
+2025-07-07T09:48:18.4451857Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4452088Z [31m│[0m [0m
+2025-07-07T09:48:18.4452543Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_fsx_csi_driver/main.tf line 47, in resource "helm_release" "this":
+2025-07-07T09:48:18.4452936Z [31m│[0m [0m  47:   dynamic [4m"postrender"[0m {[0m
+2025-07-07T09:48:18.4453150Z [31m│[0m [0m
+2025-07-07T09:48:18.4453611Z [31m│[0m [0mBlocks of type "postrender" are not expected here.
+2025-07-07T09:48:18.4453837Z [31m╵[0m[0m
+2025-07-07T09:48:18.4472040Z [31m╷[0m[0m
+2025-07-07T09:48:18.4472349Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4472637Z [31m│[0m [0m
+2025-07-07T09:48:18.4473095Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_fsx_csi_driver/main.tf line 56, in resource "helm_release" "this":
+2025-07-07T09:48:18.4473652Z [31m│[0m [0m  56:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.4473867Z [31m│[0m [0m
+2025-07-07T09:48:18.4474110Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.4474330Z [31m╵[0m[0m
+2025-07-07T09:48:18.4492472Z [31m╷[0m[0m
+2025-07-07T09:48:18.4492854Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4493156Z [31m│[0m [0m
+2025-07-07T09:48:18.4493902Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_fsx_csi_driver/main.tf line 66, in resource "helm_release" "this":
+2025-07-07T09:48:18.4494442Z [31m│[0m [0m  66:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.4494685Z [31m│[0m [0m
+2025-07-07T09:48:18.4495015Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.4495280Z [31m╵[0m[0m
+2025-07-07T09:48:18.4514346Z [31m╷[0m[0m
+2025-07-07T09:48:18.4515014Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4515241Z [31m│[0m [0m
+2025-07-07T09:48:18.4515704Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_fsx_csi_driver/main.tf line 75, in resource "helm_release" "this":
+2025-07-07T09:48:18.4516103Z [31m│[0m [0m  75:   dynamic [4m"set_sensitive"[0m {[0m
+2025-07-07T09:48:18.4516320Z [31m│[0m [0m
+2025-07-07T09:48:18.4516580Z [31m│[0m [0mBlocks of type "set_sensitive" are not expected here.
+2025-07-07T09:48:18.4516810Z [31m╵[0m[0m
+2025-07-07T09:48:18.4534996Z [31m╷[0m[0m
+2025-07-07T09:48:18.4535288Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4535769Z [31m│[0m [0m
+2025-07-07T09:48:18.4536242Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_gateway_api_controller/main.tf line 47, in resource "helm_release" "this":
+2025-07-07T09:48:18.4536655Z [31m│[0m [0m  47:   dynamic [4m"postrender"[0m {[0m
+2025-07-07T09:48:18.4536870Z [31m│[0m [0m
+2025-07-07T09:48:18.4537139Z [31m│[0m [0mBlocks of type "postrender" are not expected here.
+2025-07-07T09:48:18.4537365Z [31m╵[0m[0m
+2025-07-07T09:48:18.4557629Z [31m╷[0m[0m
+2025-07-07T09:48:18.4557896Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4558211Z [31m│[0m [0m
+2025-07-07T09:48:18.4558705Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_gateway_api_controller/main.tf line 56, in resource "helm_release" "this":
+2025-07-07T09:48:18.4559116Z [31m│[0m [0m  56:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.4559331Z [31m│[0m [0m
+2025-07-07T09:48:18.4559577Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.4559802Z [31m╵[0m[0m
+2025-07-07T09:48:18.4586146Z [31m╷[0m[0m
+2025-07-07T09:48:18.4586557Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4586871Z [31m│[0m [0m
+2025-07-07T09:48:18.4587440Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_gateway_api_controller/main.tf line 66, in resource "helm_release" "this":
+2025-07-07T09:48:18.4587842Z [31m│[0m [0m  66:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.4588054Z [31m│[0m [0m
+2025-07-07T09:48:18.4588305Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.4588526Z [31m╵[0m[0m
+2025-07-07T09:48:18.4611460Z [31m╷[0m[0m
+2025-07-07T09:48:18.4611846Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4612173Z [31m│[0m [0m
+2025-07-07T09:48:18.4612792Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_gateway_api_controller/main.tf line 75, in resource "helm_release" "this":
+2025-07-07T09:48:18.4613440Z [31m│[0m [0m  75:   dynamic [4m"set_sensitive"[0m {[0m
+2025-07-07T09:48:18.4613690Z [31m│[0m [0m
+2025-07-07T09:48:18.4613955Z [31m│[0m [0mBlocks of type "set_sensitive" are not expected here.
+2025-07-07T09:48:18.4614332Z [31m╵[0m[0m
+2025-07-07T09:48:18.4631717Z [31m╷[0m[0m
+2025-07-07T09:48:18.4632097Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4632421Z [31m│[0m [0m
+2025-07-07T09:48:18.4633039Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_load_balancer_controller/main.tf line 47, in resource "helm_release" "this":
+2025-07-07T09:48:18.4633660Z [31m│[0m [0m  47:   dynamic [4m"postrender"[0m {[0m
+2025-07-07T09:48:18.4633891Z [31m│[0m [0m
+2025-07-07T09:48:18.4634152Z [31m│[0m [0mBlocks of type "postrender" are not expected here.
+2025-07-07T09:48:18.4634620Z [31m╵[0m[0m
+2025-07-07T09:48:18.4651693Z [31m╷[0m[0m
+2025-07-07T09:48:18.4652070Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4652383Z [31m│[0m [0m
+2025-07-07T09:48:18.4653003Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_load_balancer_controller/main.tf line 56, in resource "helm_release" "this":
+2025-07-07T09:48:18.4653592Z [31m│[0m [0m  56:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.4653805Z [31m│[0m [0m
+2025-07-07T09:48:18.4654150Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.4654574Z [31m╵[0m[0m
+2025-07-07T09:48:18.4671827Z [31m╷[0m[0m
+2025-07-07T09:48:18.4672201Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4672537Z [31m│[0m [0m
+2025-07-07T09:48:18.4673163Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_load_balancer_controller/main.tf line 66, in resource "helm_release" "this":
+2025-07-07T09:48:18.4673811Z [31m│[0m [0m  66:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.4674027Z [31m│[0m [0m
+2025-07-07T09:48:18.4674276Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.4674502Z [31m╵[0m[0m
+2025-07-07T09:48:18.4692072Z [31m╷[0m[0m
+2025-07-07T09:48:18.4692440Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4692763Z [31m│[0m [0m
+2025-07-07T09:48:18.4693507Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_load_balancer_controller/main.tf line 75, in resource "helm_release" "this":
+2025-07-07T09:48:18.4693960Z [31m│[0m [0m  75:   dynamic [4m"set_sensitive"[0m {[0m
+2025-07-07T09:48:18.4694366Z [31m│[0m [0m
+2025-07-07T09:48:18.4694637Z [31m│[0m [0mBlocks of type "set_sensitive" are not expected here.
+2025-07-07T09:48:18.4694875Z [31m╵[0m[0m
+2025-07-07T09:48:18.4715965Z [31m╷[0m[0m
+2025-07-07T09:48:18.4716323Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4716639Z [31m│[0m [0m
+2025-07-07T09:48:18.4717248Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_node_termination_handler/main.tf line 47, in resource "helm_release" "this":
+2025-07-07T09:48:18.4717665Z [31m│[0m [0m  47:   dynamic [4m"postrender"[0m {[0m
+2025-07-07T09:48:18.4717883Z [31m│[0m [0m
+2025-07-07T09:48:18.4718159Z [31m│[0m [0mBlocks of type "postrender" are not expected here.
+2025-07-07T09:48:18.4718426Z [31m╵[0m[0m
+2025-07-07T09:48:18.4740010Z [31m╷[0m[0m
+2025-07-07T09:48:18.4740371Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4740681Z [31m│[0m [0m
+2025-07-07T09:48:18.4741290Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_node_termination_handler/main.tf line 56, in resource "helm_release" "this":
+2025-07-07T09:48:18.4741725Z [31m│[0m [0m  56:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.4741935Z [31m│[0m [0m
+2025-07-07T09:48:18.4742184Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.4742403Z [31m╵[0m[0m
+2025-07-07T09:48:18.4760570Z [31m╷[0m[0m
+2025-07-07T09:48:18.4760924Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4761220Z [31m│[0m [0m
+2025-07-07T09:48:18.4761801Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_node_termination_handler/main.tf line 66, in resource "helm_release" "this":
+2025-07-07T09:48:18.4762437Z [31m│[0m [0m  66:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.4762645Z [31m│[0m [0m
+2025-07-07T09:48:18.4762890Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.4763108Z [31m╵[0m[0m
+2025-07-07T09:48:18.4781189Z [31m╷[0m[0m
+2025-07-07T09:48:18.4781585Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4781880Z [31m│[0m [0m
+2025-07-07T09:48:18.4782450Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_node_termination_handler/main.tf line 75, in resource "helm_release" "this":
+2025-07-07T09:48:18.4782864Z [31m│[0m [0m  75:   dynamic [4m"set_sensitive"[0m {[0m
+2025-07-07T09:48:18.4783639Z [31m│[0m [0m
+2025-07-07T09:48:18.4783917Z [31m│[0m [0mBlocks of type "set_sensitive" are not expected here.
+2025-07-07T09:48:18.4784147Z [31m╵[0m[0m
+2025-07-07T09:48:18.4905226Z [31m╷[0m[0m
+2025-07-07T09:48:18.4905752Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4906078Z [31m│[0m [0m
+2025-07-07T09:48:18.4906774Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_privateca_issuer/main.tf line 47, in resource "helm_release" "this":
+2025-07-07T09:48:18.4907328Z [31m│[0m [0m  47:   dynamic [4m"postrender"[0m {[0m
+2025-07-07T09:48:18.4907642Z [31m│[0m [0m
+2025-07-07T09:48:18.4908029Z [31m│[0m [0mBlocks of type "postrender" are not expected here.
+2025-07-07T09:48:18.4908399Z [31m╵[0m[0m
+2025-07-07T09:48:18.4933594Z [31m╷[0m[0m
+2025-07-07T09:48:18.4934005Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4934474Z [31m│[0m [0m
+2025-07-07T09:48:18.4935106Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_privateca_issuer/main.tf line 56, in resource "helm_release" "this":
+2025-07-07T09:48:18.4935578Z [31m│[0m [0m  56:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.4935786Z [31m│[0m [0m
+2025-07-07T09:48:18.4936035Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.4936256Z [31m╵[0m[0m
+2025-07-07T09:48:18.4959481Z [31m╷[0m[0m
+2025-07-07T09:48:18.4959852Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4960174Z [31m│[0m [0m
+2025-07-07T09:48:18.4960760Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_privateca_issuer/main.tf line 66, in resource "helm_release" "this":
+2025-07-07T09:48:18.4961175Z [31m│[0m [0m  66:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.4961384Z [31m│[0m [0m
+2025-07-07T09:48:18.4961630Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.4961848Z [31m╵[0m[0m
+2025-07-07T09:48:18.4979215Z [31m╷[0m[0m
+2025-07-07T09:48:18.4979590Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4979926Z [31m│[0m [0m
+2025-07-07T09:48:18.4980532Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_aws_privateca_issuer/main.tf line 75, in resource "helm_release" "this":
+2025-07-07T09:48:18.4980954Z [31m│[0m [0m  75:   dynamic [4m"set_sensitive"[0m {[0m
+2025-07-07T09:48:18.4981174Z [31m│[0m [0m
+2025-07-07T09:48:18.4981437Z [31m│[0m [0mBlocks of type "set_sensitive" are not expected here.
+2025-07-07T09:48:18.4981668Z [31m╵[0m[0m
+2025-07-07T09:48:18.4999232Z [31m╷[0m[0m
+2025-07-07T09:48:18.4999605Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.4999924Z [31m│[0m [0m
+2025-07-07T09:48:18.5000494Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_cert_manager/main.tf line 47, in resource "helm_release" "this":
+2025-07-07T09:48:18.5001216Z [31m│[0m [0m  47:   dynamic [4m"postrender"[0m {[0m
+2025-07-07T09:48:18.5001435Z [31m│[0m [0m
+2025-07-07T09:48:18.5001695Z [31m│[0m [0mBlocks of type "postrender" are not expected here.
+2025-07-07T09:48:18.5001931Z [31m╵[0m[0m
+2025-07-07T09:48:18.5020292Z [31m╷[0m[0m
+2025-07-07T09:48:18.5020667Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5020974Z [31m│[0m [0m
+2025-07-07T09:48:18.5021590Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_cert_manager/main.tf line 56, in resource "helm_release" "this":
+2025-07-07T09:48:18.5022245Z [31m│[0m [0m  56:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.5022467Z [31m│[0m [0m
+2025-07-07T09:48:18.5022717Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.5022954Z [31m╵[0m[0m
+2025-07-07T09:48:18.5039473Z [31m╷[0m[0m
+2025-07-07T09:48:18.5039834Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5040148Z [31m│[0m [0m
+2025-07-07T09:48:18.5040706Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_cert_manager/main.tf line 66, in resource "helm_release" "this":
+2025-07-07T09:48:18.5041103Z [31m│[0m [0m  66:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.5041315Z [31m│[0m [0m
+2025-07-07T09:48:18.5041564Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.5041786Z [31m╵[0m[0m
+2025-07-07T09:48:18.5061141Z [31m╷[0m[0m
+2025-07-07T09:48:18.5061536Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5061832Z [31m│[0m [0m
+2025-07-07T09:48:18.5062435Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_cert_manager/main.tf line 75, in resource "helm_release" "this":
+2025-07-07T09:48:18.5062957Z [31m│[0m [0m  75:   dynamic [4m"set_sensitive"[0m {[0m
+2025-07-07T09:48:18.5063446Z [31m│[0m [0m
+2025-07-07T09:48:18.5063814Z [31m│[0m [0mBlocks of type "set_sensitive" are not expected here.
+2025-07-07T09:48:18.5064116Z [31m╵[0m[0m
+2025-07-07T09:48:18.5085888Z [31m╷[0m[0m
+2025-07-07T09:48:18.5086184Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5086419Z [31m│[0m [0m
+2025-07-07T09:48:18.5086880Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_cluster_autoscaler/main.tf line 47, in resource "helm_release" "this":
+2025-07-07T09:48:18.5087289Z [31m│[0m [0m  47:   dynamic [4m"postrender"[0m {[0m
+2025-07-07T09:48:18.5087508Z [31m│[0m [0m
+2025-07-07T09:48:18.5087770Z [31m│[0m [0mBlocks of type "postrender" are not expected here.
+2025-07-07T09:48:18.5088008Z [31m╵[0m[0m
+2025-07-07T09:48:18.5105310Z [31m╷[0m[0m
+2025-07-07T09:48:18.5105590Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5105818Z [31m│[0m [0m
+2025-07-07T09:48:18.5106277Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_cluster_autoscaler/main.tf line 56, in resource "helm_release" "this":
+2025-07-07T09:48:18.5106669Z [31m│[0m [0m  56:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.5106880Z [31m│[0m [0m
+2025-07-07T09:48:18.5107135Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.5107356Z [31m╵[0m[0m
+2025-07-07T09:48:18.5126781Z [31m╷[0m[0m
+2025-07-07T09:48:18.5127123Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5127350Z [31m│[0m [0m
+2025-07-07T09:48:18.5127811Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_cluster_autoscaler/main.tf line 66, in resource "helm_release" "this":
+2025-07-07T09:48:18.5128446Z [31m│[0m [0m  66:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.5128656Z [31m│[0m [0m
+2025-07-07T09:48:18.5128903Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.5129123Z [31m╵[0m[0m
+2025-07-07T09:48:18.5146484Z [31m╷[0m[0m
+2025-07-07T09:48:18.5146794Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5147023Z [31m│[0m [0m
+2025-07-07T09:48:18.5147488Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_cluster_autoscaler/main.tf line 75, in resource "helm_release" "this":
+2025-07-07T09:48:18.5148059Z [31m│[0m [0m  75:   dynamic [4m"set_sensitive"[0m {[0m
+2025-07-07T09:48:18.5148278Z [31m│[0m [0m
+2025-07-07T09:48:18.5148547Z [31m│[0m [0mBlocks of type "set_sensitive" are not expected here.
+2025-07-07T09:48:18.5148778Z [31m╵[0m[0m
+2025-07-07T09:48:18.5165672Z [31m╷[0m[0m
+2025-07-07T09:48:18.5166011Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5166249Z [31m│[0m [0m
+2025-07-07T09:48:18.5166730Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_cluster_proportional_autoscaler/main.tf line 47, in resource "helm_release" "this":
+2025-07-07T09:48:18.5167156Z [31m│[0m [0m  47:   dynamic [4m"postrender"[0m {[0m
+2025-07-07T09:48:18.5167372Z [31m│[0m [0m
+2025-07-07T09:48:18.5167630Z [31m│[0m [0mBlocks of type "postrender" are not expected here.
+2025-07-07T09:48:18.5167865Z [31m╵[0m[0m
+2025-07-07T09:48:18.5190155Z [31m╷[0m[0m
+2025-07-07T09:48:18.5190455Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5190699Z [31m│[0m [0m
+2025-07-07T09:48:18.5191186Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_cluster_proportional_autoscaler/main.tf line 56, in resource "helm_release" "this":
+2025-07-07T09:48:18.5191588Z [31m│[0m [0m  56:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.5191796Z [31m│[0m [0m
+2025-07-07T09:48:18.5192040Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.5192266Z [31m╵[0m[0m
+2025-07-07T09:48:18.5217413Z [31m╷[0m[0m
+2025-07-07T09:48:18.5217774Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5218003Z [31m│[0m [0m
+2025-07-07T09:48:18.5218483Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_cluster_proportional_autoscaler/main.tf line 66, in resource "helm_release" "this":
+2025-07-07T09:48:18.5218899Z [31m│[0m [0m  66:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.5219122Z [31m│[0m [0m
+2025-07-07T09:48:18.5219368Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.5219587Z [31m╵[0m[0m
+2025-07-07T09:48:18.5238098Z [31m╷[0m[0m
+2025-07-07T09:48:18.5238374Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5238721Z [31m│[0m [0m
+2025-07-07T09:48:18.5239243Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_cluster_proportional_autoscaler/main.tf line 75, in resource "helm_release" "this":
+2025-07-07T09:48:18.5239668Z [31m│[0m [0m  75:   dynamic [4m"set_sensitive"[0m {[0m
+2025-07-07T09:48:18.5239892Z [31m│[0m [0m
+2025-07-07T09:48:18.5240158Z [31m│[0m [0mBlocks of type "set_sensitive" are not expected here.
+2025-07-07T09:48:18.5240471Z [31m╵[0m[0m
+2025-07-07T09:48:18.5260026Z [31m╷[0m[0m
+2025-07-07T09:48:18.5260410Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5260941Z [31m│[0m [0m
+2025-07-07T09:48:18.5261393Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_external_dns/main.tf line 47, in resource "helm_release" "this":
+2025-07-07T09:48:18.5261787Z [31m│[0m [0m  47:   dynamic [4m"postrender"[0m {[0m
+2025-07-07T09:48:18.5262007Z [31m│[0m [0m
+2025-07-07T09:48:18.5262264Z [31m│[0m [0mBlocks of type "postrender" are not expected here.
+2025-07-07T09:48:18.5262490Z [31m╵[0m[0m
+2025-07-07T09:48:18.5279492Z [31m╷[0m[0m
+2025-07-07T09:48:18.5279863Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5280339Z [31m│[0m [0m
+2025-07-07T09:48:18.5280787Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_external_dns/main.tf line 56, in resource "helm_release" "this":
+2025-07-07T09:48:18.5281176Z [31m│[0m [0m  56:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.5281403Z [31m│[0m [0m
+2025-07-07T09:48:18.5281651Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.5281875Z [31m╵[0m[0m
+2025-07-07T09:48:18.5299111Z [31m╷[0m[0m
+2025-07-07T09:48:18.5299544Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5299778Z [31m│[0m [0m
+2025-07-07T09:48:18.5300228Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_external_dns/main.tf line 66, in resource "helm_release" "this":
+2025-07-07T09:48:18.5300607Z [31m│[0m [0m  66:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.5300831Z [31m│[0m [0m
+2025-07-07T09:48:18.5301077Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.5301295Z [31m╵[0m[0m
+2025-07-07T09:48:18.5319928Z [31m╷[0m[0m
+2025-07-07T09:48:18.5320299Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5320625Z [31m│[0m [0m
+2025-07-07T09:48:18.5321216Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_external_dns/main.tf line 75, in resource "helm_release" "this":
+2025-07-07T09:48:18.5321685Z [31m│[0m [0m  75:   dynamic [4m"set_sensitive"[0m {[0m
+2025-07-07T09:48:18.5321905Z [31m│[0m [0m
+2025-07-07T09:48:18.5322168Z [31m│[0m [0mBlocks of type "set_sensitive" are not expected here.
+2025-07-07T09:48:18.5322398Z [31m╵[0m[0m
+2025-07-07T09:48:18.5346573Z [31m╷[0m[0m
+2025-07-07T09:48:18.5346955Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5347274Z [31m│[0m [0m
+2025-07-07T09:48:18.5347845Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_external_secrets/main.tf line 47, in resource "helm_release" "this":
+2025-07-07T09:48:18.5348439Z [31m│[0m [0m  47:   dynamic [4m"postrender"[0m {[0m
+2025-07-07T09:48:18.5348655Z [31m│[0m [0m
+2025-07-07T09:48:18.5348913Z [31m│[0m [0mBlocks of type "postrender" are not expected here.
+2025-07-07T09:48:18.5349141Z [31m╵[0m[0m
+2025-07-07T09:48:18.5368289Z [31m╷[0m[0m
+2025-07-07T09:48:18.5368665Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5368984Z [31m│[0m [0m
+2025-07-07T09:48:18.5369576Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_external_secrets/main.tf line 56, in resource "helm_release" "this":
+2025-07-07T09:48:18.5370146Z [31m│[0m [0m  56:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.5370356Z [31m│[0m [0m
+2025-07-07T09:48:18.5370603Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.5370829Z [31m╵[0m[0m
+2025-07-07T09:48:18.5387036Z [31m╷[0m[0m
+2025-07-07T09:48:18.5387416Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5387715Z [31m│[0m [0m
+2025-07-07T09:48:18.5388262Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_external_secrets/main.tf line 66, in resource "helm_release" "this":
+2025-07-07T09:48:18.5388662Z [31m│[0m [0m  66:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.5388880Z [31m│[0m [0m
+2025-07-07T09:48:18.5389129Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.5389348Z [31m╵[0m[0m
+2025-07-07T09:48:18.5406816Z [31m╷[0m[0m
+2025-07-07T09:48:18.5407194Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5407510Z [31m│[0m [0m
+2025-07-07T09:48:18.5408093Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_external_secrets/main.tf line 75, in resource "helm_release" "this":
+2025-07-07T09:48:18.5408521Z [31m│[0m [0m  75:   dynamic [4m"set_sensitive"[0m {[0m
+2025-07-07T09:48:18.5408738Z [31m│[0m [0m
+2025-07-07T09:48:18.5409001Z [31m│[0m [0mBlocks of type "set_sensitive" are not expected here.
+2025-07-07T09:48:18.5409231Z [31m╵[0m[0m
+2025-07-07T09:48:18.5425317Z [31m╷[0m[0m
+2025-07-07T09:48:18.5425706Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5426008Z [31m│[0m [0m
+2025-07-07T09:48:18.5426523Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_gatekeeper/main.tf line 47, in resource "helm_release" "this":
+2025-07-07T09:48:18.5426926Z [31m│[0m [0m  47:   dynamic [4m"postrender"[0m {[0m
+2025-07-07T09:48:18.5427139Z [31m│[0m [0m
+2025-07-07T09:48:18.5427398Z [31m│[0m [0mBlocks of type "postrender" are not expected here.
+2025-07-07T09:48:18.5427631Z [31m╵[0m[0m
+2025-07-07T09:48:18.5443183Z [31m╷[0m[0m
+2025-07-07T09:48:18.5443691Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5443993Z [31m│[0m [0m
+2025-07-07T09:48:18.5444554Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_gatekeeper/main.tf line 56, in resource "helm_release" "this":
+2025-07-07T09:48:18.5444942Z [31m│[0m [0m  56:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.5445155Z [31m│[0m [0m
+2025-07-07T09:48:18.5445402Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.5445624Z [31m╵[0m[0m
+2025-07-07T09:48:18.5556550Z [31m╷[0m[0m
+2025-07-07T09:48:18.5556988Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5557290Z [31m│[0m [0m
+2025-07-07T09:48:18.5557829Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_gatekeeper/main.tf line 66, in resource "helm_release" "this":
+2025-07-07T09:48:18.5558582Z [31m│[0m [0m  66:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.5558794Z [31m│[0m [0m
+2025-07-07T09:48:18.5559043Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.5559273Z [31m╵[0m[0m
+2025-07-07T09:48:18.5559466Z [31m╷[0m[0m
+2025-07-07T09:48:18.5559724Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5559951Z [31m│[0m [0m
+2025-07-07T09:48:18.5560398Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_gatekeeper/main.tf line 75, in resource "helm_release" "this":
+2025-07-07T09:48:18.5560935Z [31m│[0m [0m  75:   dynamic [4m"set_sensitive"[0m {[0m
+2025-07-07T09:48:18.5561153Z [31m│[0m [0m
+2025-07-07T09:48:18.5561423Z [31m│[0m [0mBlocks of type "set_sensitive" are not expected here.
+2025-07-07T09:48:18.5561660Z [31m╵[0m[0m
+2025-07-07T09:48:18.5561849Z [31m╷[0m[0m
+2025-07-07T09:48:18.5562114Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5562340Z [31m│[0m [0m
+2025-07-07T09:48:18.5562846Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_ingress_nginx/main.tf line 47, in resource "helm_release" "this":
+2025-07-07T09:48:18.5563437Z [31m│[0m [0m  47:   dynamic [4m"postrender"[0m {[0m
+2025-07-07T09:48:18.5563752Z [31m│[0m [0m
+2025-07-07T09:48:18.5564110Z [31m│[0m [0mBlocks of type "postrender" are not expected here.
+2025-07-07T09:48:18.5564403Z [31m╵[0m[0m
+2025-07-07T09:48:18.5583724Z [31m╷[0m[0m
+2025-07-07T09:48:18.5584152Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5584479Z [31m│[0m [0m
+2025-07-07T09:48:18.5585160Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_ingress_nginx/main.tf line 56, in resource "helm_release" "this":
+2025-07-07T09:48:18.5585710Z [31m│[0m [0m  56:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.5586009Z [31m│[0m [0m
+2025-07-07T09:48:18.5586372Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.5586682Z [31m╵[0m[0m
+2025-07-07T09:48:18.5604446Z [31m╷[0m[0m
+2025-07-07T09:48:18.5604924Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5605256Z [31m│[0m [0m
+2025-07-07T09:48:18.5605925Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_ingress_nginx/main.tf line 66, in resource "helm_release" "this":
+2025-07-07T09:48:18.5606481Z [31m│[0m [0m  66:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.5606779Z [31m│[0m [0m
+2025-07-07T09:48:18.5607135Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.5607451Z [31m╵[0m[0m
+2025-07-07T09:48:18.5625483Z [31m╷[0m[0m
+2025-07-07T09:48:18.5625901Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5626220Z [31m│[0m [0m
+2025-07-07T09:48:18.5626893Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_ingress_nginx/main.tf line 75, in resource "helm_release" "this":
+2025-07-07T09:48:18.5627455Z [31m│[0m [0m  75:   dynamic [4m"set_sensitive"[0m {[0m
+2025-07-07T09:48:18.5627763Z [31m│[0m [0m
+2025-07-07T09:48:18.5628157Z [31m│[0m [0mBlocks of type "set_sensitive" are not expected here.
+2025-07-07T09:48:18.5628719Z [31m╵[0m[0m
+2025-07-07T09:48:18.5646560Z [31m╷[0m[0m
+2025-07-07T09:48:18.5646974Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5647297Z [31m│[0m [0m
+2025-07-07T09:48:18.5647960Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_karpenter/main.tf line 47, in resource "helm_release" "this":
+2025-07-07T09:48:18.5648867Z [31m│[0m [0m  47:   dynamic [4m"postrender"[0m {[0m
+2025-07-07T09:48:18.5649177Z [31m│[0m [0m
+2025-07-07T09:48:18.5649552Z [31m│[0m [0mBlocks of type "postrender" are not expected here.
+2025-07-07T09:48:18.5649873Z [31m╵[0m[0m
+2025-07-07T09:48:18.5667267Z [31m╷[0m[0m
+2025-07-07T09:48:18.5667683Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5668006Z [31m│[0m [0m
+2025-07-07T09:48:18.5668663Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_karpenter/main.tf line 56, in resource "helm_release" "this":
+2025-07-07T09:48:18.5669442Z [31m│[0m [0m  56:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.5669740Z [31m│[0m [0m
+2025-07-07T09:48:18.5670107Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.5670437Z [31m╵[0m[0m
+2025-07-07T09:48:18.5687862Z [31m╷[0m[0m
+2025-07-07T09:48:18.5688285Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5688641Z [31m│[0m [0m
+2025-07-07T09:48:18.5689322Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_karpenter/main.tf line 66, in resource "helm_release" "this":
+2025-07-07T09:48:18.5689860Z [31m│[0m [0m  66:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.5690158Z [31m│[0m [0m
+2025-07-07T09:48:18.5690519Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.5690848Z [31m╵[0m[0m
+2025-07-07T09:48:18.5708486Z [31m╷[0m[0m
+2025-07-07T09:48:18.5708921Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5709243Z [31m│[0m [0m
+2025-07-07T09:48:18.5709909Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_karpenter/main.tf line 75, in resource "helm_release" "this":
+2025-07-07T09:48:18.5710481Z [31m│[0m [0m  75:   dynamic [4m"set_sensitive"[0m {[0m
+2025-07-07T09:48:18.5710792Z [31m│[0m [0m
+2025-07-07T09:48:18.5711173Z [31m│[0m [0mBlocks of type "set_sensitive" are not expected here.
+2025-07-07T09:48:18.5711507Z [31m╵[0m[0m
+2025-07-07T09:48:18.5731043Z [31m╷[0m[0m
+2025-07-07T09:48:18.5731463Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5731783Z [31m│[0m [0m
+2025-07-07T09:48:18.5732464Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_kube_prometheus_stack/main.tf line 47, in resource "helm_release" "this":
+2025-07-07T09:48:18.5733044Z [31m│[0m [0m  47:   dynamic [4m"postrender"[0m {[0m
+2025-07-07T09:48:18.5733469Z [31m│[0m [0m
+2025-07-07T09:48:18.5733855Z [31m│[0m [0mBlocks of type "postrender" are not expected here.
+2025-07-07T09:48:18.5734271Z [31m╵[0m[0m
+2025-07-07T09:48:18.5752575Z [31m╷[0m[0m
+2025-07-07T09:48:18.5752989Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5753508Z [31m│[0m [0m
+2025-07-07T09:48:18.5754197Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_kube_prometheus_stack/main.tf line 56, in resource "helm_release" "this":
+2025-07-07T09:48:18.5754759Z [31m│[0m [0m  56:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.5755052Z [31m│[0m [0m
+2025-07-07T09:48:18.5755389Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.5755719Z [31m╵[0m[0m
+2025-07-07T09:48:18.5773974Z [31m╷[0m[0m
+2025-07-07T09:48:18.5774501Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5774821Z [31m│[0m [0m
+2025-07-07T09:48:18.5775837Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_kube_prometheus_stack/main.tf line 66, in resource "helm_release" "this":
+2025-07-07T09:48:18.5776382Z [31m│[0m [0m  66:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.5776678Z [31m│[0m [0m
+2025-07-07T09:48:18.5777039Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.5777351Z [31m╵[0m[0m
+2025-07-07T09:48:18.5795856Z [31m╷[0m[0m
+2025-07-07T09:48:18.5796274Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5796602Z [31m│[0m [0m
+2025-07-07T09:48:18.5797263Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_kube_prometheus_stack/main.tf line 75, in resource "helm_release" "this":
+2025-07-07T09:48:18.5798059Z [31m│[0m [0m  75:   dynamic [4m"set_sensitive"[0m {[0m
+2025-07-07T09:48:18.5798418Z [31m│[0m [0m
+2025-07-07T09:48:18.5798800Z [31m│[0m [0mBlocks of type "set_sensitive" are not expected here.
+2025-07-07T09:48:18.5799119Z [31m╵[0m[0m
+2025-07-07T09:48:18.5818843Z [31m╷[0m[0m
+2025-07-07T09:48:18.5819261Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5819581Z [31m│[0m [0m
+2025-07-07T09:48:18.5820256Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_metrics_server/main.tf line 47, in resource "helm_release" "this":
+2025-07-07T09:48:18.5820809Z [31m│[0m [0m  47:   dynamic [4m"postrender"[0m {[0m
+2025-07-07T09:48:18.5821111Z [31m│[0m [0m
+2025-07-07T09:48:18.5821498Z [31m│[0m [0mBlocks of type "postrender" are not expected here.
+2025-07-07T09:48:18.5821825Z [31m╵[0m[0m
+2025-07-07T09:48:18.5839704Z [31m╷[0m[0m
+2025-07-07T09:48:18.5840117Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5840452Z [31m│[0m [0m
+2025-07-07T09:48:18.5841118Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_metrics_server/main.tf line 56, in resource "helm_release" "this":
+2025-07-07T09:48:18.5841659Z [31m│[0m [0m  56:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.5841963Z [31m│[0m [0m
+2025-07-07T09:48:18.5842320Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.5842632Z [31m╵[0m[0m
+2025-07-07T09:48:18.5860961Z [31m╷[0m[0m
+2025-07-07T09:48:18.5861548Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5861874Z [31m│[0m [0m
+2025-07-07T09:48:18.5862555Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_metrics_server/main.tf line 66, in resource "helm_release" "this":
+2025-07-07T09:48:18.5863122Z [31m│[0m [0m  66:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.5863547Z [31m│[0m [0m
+2025-07-07T09:48:18.5863906Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.5864221Z [31m╵[0m[0m
+2025-07-07T09:48:18.5883755Z [31m╷[0m[0m
+2025-07-07T09:48:18.5884164Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5884489Z [31m│[0m [0m
+2025-07-07T09:48:18.5885137Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_metrics_server/main.tf line 75, in resource "helm_release" "this":
+2025-07-07T09:48:18.5885686Z [31m│[0m [0m  75:   dynamic [4m"set_sensitive"[0m {[0m
+2025-07-07T09:48:18.5886009Z [31m│[0m [0m
+2025-07-07T09:48:18.5886390Z [31m│[0m [0mBlocks of type "set_sensitive" are not expected here.
+2025-07-07T09:48:18.5886714Z [31m╵[0m[0m
+2025-07-07T09:48:18.5905429Z [31m╷[0m[0m
+2025-07-07T09:48:18.5905857Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5906489Z [31m│[0m [0m
+2025-07-07T09:48:18.5907188Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_secrets_store_csi_driver/main.tf line 47, in resource "helm_release" "this":
+2025-07-07T09:48:18.5907748Z [31m│[0m [0m  47:   dynamic [4m"postrender"[0m {[0m
+2025-07-07T09:48:18.5908047Z [31m│[0m [0m
+2025-07-07T09:48:18.5908467Z [31m│[0m [0mBlocks of type "postrender" are not expected here.
+2025-07-07T09:48:18.5908798Z [31m╵[0m[0m
+2025-07-07T09:48:18.5926496Z [31m╷[0m[0m
+2025-07-07T09:48:18.5926907Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5927436Z [31m│[0m [0m
+2025-07-07T09:48:18.5928132Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_secrets_store_csi_driver/main.tf line 56, in resource "helm_release" "this":
+2025-07-07T09:48:18.5928740Z [31m│[0m [0m  56:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.5929047Z [31m│[0m [0m
+2025-07-07T09:48:18.5929406Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.5929716Z [31m╵[0m[0m
+2025-07-07T09:48:18.5947439Z [31m╷[0m[0m
+2025-07-07T09:48:18.5947860Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5948180Z [31m│[0m [0m
+2025-07-07T09:48:18.5948867Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_secrets_store_csi_driver/main.tf line 66, in resource "helm_release" "this":
+2025-07-07T09:48:18.5949432Z [31m│[0m [0m  66:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.5949740Z [31m│[0m [0m
+2025-07-07T09:48:18.5950089Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.5950406Z [31m╵[0m[0m
+2025-07-07T09:48:18.5971324Z [31m╷[0m[0m
+2025-07-07T09:48:18.5971741Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5972061Z [31m│[0m [0m
+2025-07-07T09:48:18.5972752Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_secrets_store_csi_driver/main.tf line 75, in resource "helm_release" "this":
+2025-07-07T09:48:18.5973442Z [31m│[0m [0m  75:   dynamic [4m"set_sensitive"[0m {[0m
+2025-07-07T09:48:18.5973760Z [31m│[0m [0m
+2025-07-07T09:48:18.5974244Z [31m│[0m [0mBlocks of type "set_sensitive" are not expected here.
+2025-07-07T09:48:18.5974576Z [31m╵[0m[0m
+2025-07-07T09:48:18.5992469Z [31m╷[0m[0m
+2025-07-07T09:48:18.5992897Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.5993403Z [31m│[0m [0m
+2025-07-07T09:48:18.5994135Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_secrets_store_csi_driver_provider_aws/main.tf line 47, in resource "helm_release" "this":
+2025-07-07T09:48:18.5994795Z [31m│[0m [0m  47:   dynamic [4m"postrender"[0m {[0m
+2025-07-07T09:48:18.5995108Z [31m│[0m [0m
+2025-07-07T09:48:18.5995476Z [31m│[0m [0mBlocks of type "postrender" are not expected here.
+2025-07-07T09:48:18.5995801Z [31m╵[0m[0m
+2025-07-07T09:48:18.6013745Z [31m╷[0m[0m
+2025-07-07T09:48:18.6014221Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.6014543Z [31m│[0m [0m
+2025-07-07T09:48:18.6015255Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_secrets_store_csi_driver_provider_aws/main.tf line 56, in resource "helm_release" "this":
+2025-07-07T09:48:18.6015846Z [31m│[0m [0m  56:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.6016144Z [31m│[0m [0m
+2025-07-07T09:48:18.6016504Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.6017105Z [31m╵[0m[0m
+2025-07-07T09:48:18.6035258Z [31m╷[0m[0m
+2025-07-07T09:48:18.6035672Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.6035989Z [31m│[0m [0m
+2025-07-07T09:48:18.6036709Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_secrets_store_csi_driver_provider_aws/main.tf line 66, in resource "helm_release" "this":
+2025-07-07T09:48:18.6037285Z [31m│[0m [0m  66:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.6037576Z [31m│[0m [0m
+2025-07-07T09:48:18.6037933Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.6038268Z [31m╵[0m[0m
+2025-07-07T09:48:18.6056930Z [31m╷[0m[0m
+2025-07-07T09:48:18.6057330Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.6057649Z [31m│[0m [0m
+2025-07-07T09:48:18.6058341Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_secrets_store_csi_driver_provider_aws/main.tf line 75, in resource "helm_release" "this":
+2025-07-07T09:48:18.6058939Z [31m│[0m [0m  75:   dynamic [4m"set_sensitive"[0m {[0m
+2025-07-07T09:48:18.6059246Z [31m│[0m [0m
+2025-07-07T09:48:18.6059612Z [31m│[0m [0mBlocks of type "set_sensitive" are not expected here.
+2025-07-07T09:48:18.6059931Z [31m╵[0m[0m
+2025-07-07T09:48:18.6078887Z [31m╷[0m[0m
+2025-07-07T09:48:18.6079305Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.6079632Z [31m│[0m [0m
+2025-07-07T09:48:18.6080281Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_velero/main.tf line 47, in resource "helm_release" "this":
+2025-07-07T09:48:18.6080842Z [31m│[0m [0m  47:   dynamic [4m"postrender"[0m {[0m
+2025-07-07T09:48:18.6081152Z [31m│[0m [0m
+2025-07-07T09:48:18.6081520Z [31m│[0m [0mBlocks of type "postrender" are not expected here.
+2025-07-07T09:48:18.6081841Z [31m╵[0m[0m
+2025-07-07T09:48:18.6099762Z [31m╷[0m[0m
+2025-07-07T09:48:18.6100177Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.6100494Z [31m│[0m [0m
+2025-07-07T09:48:18.6101140Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_velero/main.tf line 56, in resource "helm_release" "this":
+2025-07-07T09:48:18.6101673Z [31m│[0m [0m  56:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.6101968Z [31m│[0m [0m
+2025-07-07T09:48:18.6102321Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.6102660Z [31m╵[0m[0m
+2025-07-07T09:48:18.6120607Z [31m╷[0m[0m
+2025-07-07T09:48:18.6121014Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.6121333Z [31m│[0m [0m
+2025-07-07T09:48:18.6121999Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_velero/main.tf line 66, in resource "helm_release" "this":
+2025-07-07T09:48:18.6122530Z [31m│[0m [0m  66:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.6122833Z [31m│[0m [0m
+2025-07-07T09:48:18.6123198Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.6123712Z [31m╵[0m[0m
+2025-07-07T09:48:18.6142281Z [31m╷[0m[0m
+2025-07-07T09:48:18.6142696Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.6143011Z [31m│[0m [0m
+2025-07-07T09:48:18.6143739Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_velero/main.tf line 75, in resource "helm_release" "this":
+2025-07-07T09:48:18.6144320Z [31m│[0m [0m  75:   dynamic [4m"set_sensitive"[0m {[0m
+2025-07-07T09:48:18.6144916Z [31m│[0m [0m
+2025-07-07T09:48:18.6145290Z [31m│[0m [0mBlocks of type "set_sensitive" are not expected here.
+2025-07-07T09:48:18.6145601Z [31m╵[0m[0m
+2025-07-07T09:48:18.6250854Z [31m╷[0m[0m
+2025-07-07T09:48:18.6251513Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.6251973Z [31m│[0m [0m
+2025-07-07T09:48:18.6252796Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_vpa/main.tf line 47, in resource "helm_release" "this":
+2025-07-07T09:48:18.6253730Z [31m│[0m [0m  47:   dynamic [4m"postrender"[0m {[0m
+2025-07-07T09:48:18.6254404Z [31m│[0m [0m
+2025-07-07T09:48:18.6254889Z [31m│[0m [0mBlocks of type "postrender" are not expected here.
+2025-07-07T09:48:18.6255792Z [31m╵[0m[0m
+2025-07-07T09:48:18.6256207Z [31m╷[0m[0m
+2025-07-07T09:48:18.6256806Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.6257262Z [31m│[0m [0m
+2025-07-07T09:48:18.6258026Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_vpa/main.tf line 56, in resource "helm_release" "this":
+2025-07-07T09:48:18.6284724Z [31m│[0m [0m  56:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.6285100Z [31m│[0m [0m
+2025-07-07T09:48:18.6285427Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.6285734Z [31m╵[0m[0m
+2025-07-07T09:48:18.6285937Z [31m╷[0m[0m
+2025-07-07T09:48:18.6286208Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.6286432Z [31m│[0m [0m
+2025-07-07T09:48:18.6286870Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_vpa/main.tf line 66, in resource "helm_release" "this":
+2025-07-07T09:48:18.6287266Z [31m│[0m [0m  66:   dynamic [4m"set"[0m {[0m
+2025-07-07T09:48:18.6287482Z [31m│[0m [0m
+2025-07-07T09:48:18.6287729Z [31m│[0m [0mBlocks of type "set" are not expected here.
+2025-07-07T09:48:18.6287946Z [31m╵[0m[0m
+2025-07-07T09:48:18.6290729Z [31m╷[0m[0m
+2025-07-07T09:48:18.6296990Z [31m│[0m [0m[1m[31mError: [0m[0m[1mUnsupported block type[0m
+2025-07-07T09:48:18.6297582Z [31m│[0m [0m
+2025-07-07T09:48:18.6298443Z [31m│[0m [0m[0m  on ../../../../_terraform_modules/kmbl/terraform-aws-modules-eks/modules/eks_blueprints_addons/modules/eks_blueprints_addons_vpa/main.tf line 75, in resource "helm_release" "this":
+2025-07-07T09:48:18.6299256Z [31m│[0m [0m  75:   dynamic [4m"set_sensitive"[0m {[0m
+2025-07-07T09:48:18.6299564Z [31m│[0m [0m
+2025-07-07T09:48:18.6299908Z [31m│[0m [0mBlocks of type "set_sensitive" are not expected here.
+2025-07-07T09:48:18.6300242Z [31m╵[0m[0m
 Error: template: ingress/charts/kong-support-infra/templates/secretproviderclass.yaml:5:25: executing "ingress/charts/kong-support-infra/templates/secretproviderclass.yaml" at <{{template "kong.namespace" .}}>: template "kong.namespace" not defined
 2025-07-03T14:21:35.3072431Z 
 
