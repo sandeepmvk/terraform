@@ -1,0 +1,104 @@
+To transfer local application logs to **Amazon S3** using **Alloy (formerly known as Vector by Datadog)**, follow these steps. Alloy is a flexible, high-performance observability data pipeline. You can configure it to watch local files and send their contents to S3 in structured formats like JSON, NDJSON, or raw text.
+
+---
+
+## ✅ Step-by-Step Guide
+
+### 🔧 1. **Install Alloy**
+
+Install Alloy on your system:
+
+```bash
+curl -s https://sh.vector.dev | bash
+```
+
+Or use system packages from [https://vector.dev/docs/setup/installation/](https://vector.dev/docs/setup/installation/)
+
+---
+
+### 📂 2. **Basic Configuration (`alloy.yaml`)**
+
+Here's a minimal working `alloy.yaml` configuration file to:
+
+* Read local log files
+* Send logs to an S3 bucket
+
+```yaml
+sources:
+  local_logs:
+    type: file
+    include:
+      - /var/log/myapp/*.log
+    read_from: beginning
+    ignore_older: 1d
+
+transforms:
+  parse_logs:
+    type: remap
+    inputs: [local_logs]
+    source: |
+      .timestamp = now()
+      .file = .file ?? "unknown.log"
+
+sinks:
+  s3_sink:
+    type: aws_s3
+    inputs: [parse_logs]
+    bucket: your-s3-bucket-name
+    key_prefix: logs/myapp/ # will prefix each uploaded object
+    compression: gzip
+    encoding:
+      codec: ndjson
+    batch:
+      max_bytes: 10485760  # 10MB
+      timeout_secs: 60
+    region: ap-south-1  # replace with your AWS region
+    filename_append_uuid: true
+```
+
+---
+
+### 🔐 3. **Credentials Setup**
+
+Alloy uses AWS credentials from:
+
+* Environment variables:
+
+  ```bash
+  export AWS_ACCESS_KEY_ID=your_access_key
+  export AWS_SECRET_ACCESS_KEY=your_secret_key
+  ```
+* Or via IAM role (if Alloy runs on EC2/EKS with IAM permissions)
+
+---
+
+### ▶️ 4. **Run Alloy**
+
+```bash
+alloy --config alloy.yaml
+```
+
+You should see logs being read and batches uploaded to your specified S3 path.
+
+---
+
+## 🧪 Example Output on S3
+
+If using `ndjson` encoding, files will contain logs like:
+
+```json
+{"timestamp":"2025-07-31T10:25:13Z","message":"Application started","file":"app.log"}
+{"timestamp":"2025-07-31T10:25:15Z","message":"DB connection established","file":"app.log"}
+```
+
+---
+
+## 📘 Notes
+
+* Use `encoding.codec: text` if you want raw logs.
+* Add additional `remap` transforms to extract log levels or JSON structure from logs.
+* You can use `filename_time_format` and `filename_append_uuid` options for better control over object names.
+
+---
+
+If you'd like, I can generate an `alloy.yaml` tailored to your actual log path, S3 bucket, and preferred format. Just provide those details.
